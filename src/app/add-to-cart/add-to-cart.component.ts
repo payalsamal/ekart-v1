@@ -1,4 +1,4 @@
-import { Component, Inject, OnInit } from '@angular/core';
+import { Component, inject, Inject, OnInit } from '@angular/core';
 import { CartService } from './cart.service';
 
 @Component({
@@ -6,7 +6,14 @@ import { CartService } from './cart.service';
   templateUrl: './add-to-cart.component.html',
   styleUrls: ['./add-to-cart.component.css']
 })
-export class AddToCartComponent {
+export class AddToCartComponent implements OnInit{
 
+private cartService = inject(CartService)
+
+ products:any[]=[]
+
+  ngOnInit() {
+    this.products = this.cartService.addToCartProduct;
+  }
 
 }

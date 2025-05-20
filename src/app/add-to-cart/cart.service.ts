@@ -22,8 +22,8 @@ export class CartService {
 
   }
 
-  getCartProducts()
+  getCartProducts():any
   {
-    return this.addToCartProduct;
+    return this.addToCartProduct ;
   }
 }

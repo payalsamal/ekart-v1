@@ -1,1 +1,9 @@
-<p>add-to-cart works!</p>
+
+
+<div *ngFor="let product of products" class="prod">
+    <img src= {{product.thumbnail}} [routerLink]="['/detail', product.id]">
+    <p>Name: {{product.title}} </p>
+    <p> Price:{{product.price | currency:'USD'}}</p>
+    <p> InStock:{{product.stock}}</p>
+    <p> Description:{{product.description}}</p>
+ </div>

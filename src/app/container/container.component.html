@@ -9,7 +9,7 @@
       fill="currentColor"
       class="bi bi-cart"
       viewBox="0 0 16 16"
-      (click)="getCartProducts()"
+      [routerLink]="['add-to-cart']"
     >
       <path
         d="M0 1.5A.5.5 0 0 1 .5 1h1.11a.5.5 0 0 1 .485.379L2.89 3H14.5a.5.5 0 0 1 .49.598l-1.5 7A.5.5 0 0 1 13 11H4a.5.5 0 0 1-.49-.402L1.61 3.607 1.11 2H.5a.5.5 0 0 1-.5-.5ZM3.14 4l1.25 6h8.22l1.2-5.6H3.14Z"
@@ -22,3 +22,4 @@
     <span class="cart-count">{{cartCount}}</span>
   </span>
 </div>
+
