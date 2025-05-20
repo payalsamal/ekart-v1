@@ -7,4 +7,9 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'angular-ekart';
+  test: number=1;
+  // constructor() {
+  //   this.test=1;
+  // }
+  
 }
